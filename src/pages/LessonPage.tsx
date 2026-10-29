@@ -49,6 +49,13 @@ export const LessonPage = () => {
           )}
         </div>
 
+        <div className="bg-white p-4 rounded-xl border border-gray-100 mt-2">
+          <p className="text-sm text-gray-500">
+            Material complementar de terceiros.
+          </p>
+          <p className="font-bold text-[#481B37]">{module.title}</p>
+        </div>
+
         <p className="text-gray-700">{module.description}</p>
 
         <Button onClick={handleToggle} variant={completedModules.includes(moduleId) ? 'secondary' : 'primary'}>
